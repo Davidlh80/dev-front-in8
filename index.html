@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova de Seleção - Estágio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="overlay"></div>
+    <header class="header-background">
+        <nav class="navbar">
+            <button class="hamburger" aria-label="Menu" aria-controls="navigation">
+                <img src="./icones/hamburguer.svg" alt="Menu">
+            </button>
+            <img class="logo" src="./icones/logo-in8-dev.svg" alt="Logo IN8 DEV">
+            <ul class="menu">
+                <li class="format-dif-li"><a class="format-dif-a" href="#cadastro-section">cadastro</a></li>
+                <li><a href="#tabela-section">lista</a></li>
+                <li><a href="#sobre-mim-section">sobre mim</a></li>
+            </ul>
+        </nav>
+        <div class="titulo">
+            <h1 class="titulo-principal">ESTÁGIO</h1>
+            <h2 class="titulo-subtitulo">PROVA DE SELEÇÃO</h2>
+        </div>
+    </header>
+
+    <div id="cadastro-section" class="cadastro-container">
+        <h1 class="title">CADASTRO</h1>
+        <form class="cadastro-form">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Fulano Beltrano de Oliveira da Silva" required>
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="fulanobos@gmail.com" required>
+
+            <label for="nascimento">Nascimento</label>
+            <input type="text" id="nascimento" name="nascimento" placeholder="13/10/1995" pattern="\d{2}/\d{2}/\d{4}"
+                title="Data no format-ho DD/MM/AAAA" required>
+
+            <label for="telefone">Telefone</label>
+            <input type="text" id="telefone" name="telefone" placeholder="(31) 9666-1111"
+                pattern="\(\d{2}\)\s\d{4,5}-\d{4}" title="Telefone no format-ho (XX) XXXXX-XXXX" required>
+
+            <button type="submit" class="cadastro-button">CADASTRAR</button>
+        </form>
+
+    </div>
+
+    <div id="tabela-section" class="lista-container">
+        <h1 class="title">LISTA DE CADASTRO</h1>
+        <table class="lista-tabela">
+            <thead>
+                <tr class="itens-tabela">
+                    <th></th>
+                    <th class="format-v">NOME</th>
+                    <th class="format-v">E-MAIL</th>
+                    <th class="format-v">NASCIMENTO</th>
+                    <th class="format-v">TELEFONE</th>
+                </tr>
+            </thead>
+            <tbody id="tabela-cadastros">
+                <tr class="format-h">
+                    <td class="num-tabela">1</td>
+                    <td class="format-v"></td>
+                    <td class="format-v"></td>
+                    <td class="format-v"></td>
+                    <td class="format-v"></td>
+                </tr>
+                <tr class="format-h">
+                    <td class="num-tabela">2</td>
+                    <td class="format-v"></td>
+                    <td class="format-v"></td>
+                    <td class="format-v"></td>
+                    <td class="format-v"></td>
+                </tr>
+                <tr class="format-h">
+                    <td class="num-tabela">3</td>
+                    <td class="format-v"></td>
+                    <td class="format-v"></td>
+                    <td class="format-v"></td>
+                    <td class="format-v"></td>
+                </tr>
+                <tr>
+                    <td class="num-tabela">4</td>
+                    <td class="format-v"></td>
+                    <td class="format-v"></td>
+                    <td class="format-v"></td>
+                    <td class="format-v"></td>
+                </tr>
+            </tbody>
+        </table>
+
+
+        <div class="formulario-section">
+            <div class="formulario-numeracao">
+                <a data-index="1">1</a>
+                <a data-index="2">2</a>
+                <a data-index="3">3</a>
+                <a data-index="4">4</a>
+            </div>
+            <div class="campos-formulario">
+                <div class="campo-formulario">
+                    <p class="rotulo-campo">NOME</p>
+                    <p class="entrada-campo"></p>
+                </div>
+                <div class="campo-formulario">
+                    <p class="rotulo-campo">E-MAIL</p>
+                    <p class="entrada-campo"></p>
+                </div>
+                <div class="campo-formulario">
+                    <p class="rotulo-campo">NASC.</p>
+                    <p class="entrada-campo"></p>
+                </div>
+                <div class="campo-formulario">
+                    <p class="rotulo-campo">TEL.</p>
+                    <p class="entrada-campo"></p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="return-menu">
+            <a href="#"><img src="./icones/topo-pag.svg" alt="Voltar ao topo"></a>
+        </div>
+    </div>
+
+    <footer id="sobre-mim-section" class="footer">
+        <div class="footer-content">
+            <p>David Leong Ho</p>
+            <p>davidlho97@gmail.com</p>
+            <p>(31) 9 9807-9098</p>
+            <p>PUC MINAS</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
