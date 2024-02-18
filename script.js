@@ -135,7 +135,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    const mediaQuery = window.matchMedia('(min-width: 377px) and (max-width: 1024px)');
+    const mediaQuery = window.matchMedia('(max-width: 1024px)');
     let lastMatches = mediaQuery.matches;
 
     function rearrangeMenuItems() {
