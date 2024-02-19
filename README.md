@@ -24,3 +24,7 @@ A front-end development project built for internship processes - February 2024.
 2. Para visualizar o layout mobile, selecione o formato padrão de dimensão, como o iPhone 12 Pro.
    - O menu hambúrguer é redirecionado para o topo esquerdo da tela.
    - A visualização da lista de cadastros, originalmente uma tabela, é alterada para um card de cadastro, onde os dados também são exibidos e podem ser navegados pelos números.
+
+## Observações
+
+   - Não consegui realizar a importação da fonte "Helvetica Ultra Light" mesmo aplicando como todas as outras, que funcionaram. Este detalhe foi comentado no arquivo CSS.
